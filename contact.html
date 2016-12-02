@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab" rel="stylesheet">
+    <title>PLANTIFY</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="pics/header_1024x200.jpg" alt="header">
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="pricing.html">PRICING</a></li>
+                <li><a href="themes.html">PLANT THEMES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html" class="thissection">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!--end navigering-->
+
+        <h1>CONTACT US</h1>
+
+        <div class="boxBorder">
+
+            <section>
+                <h3>PLANTIFY</h3>
+                <p> Birger Jarlsgatan 5000<br> Stockholm <br> Call: 08-13371337</p>
+                <div class="socMed">
+                    <a href=""> <img src="facebook.png" alt="got to facebook" title="go to facebook" class="social"></a>
+                    <a href=""> <img src="twitter.png" alt="got to twitter" title="go to twitter" class="social"></a>
+                </div>
+            </section>
+
+            <form id="contactform" name="contactform" method="post" action="X">
+
+                <input type="hidden" name="form" value="Meddelande kontaktförfrågan">
+                <label>Name:</label>
+                <input type="text" name="name" class="ruta" required>
+                <label>E-mail:</label>
+                <input type="text" name="epost" class="ruta" required>
+                <label>Message:</label>
+                <textarea name="message" cols="45" rows="10"></textarea>
+                <label><input type="submit" value="SEND" id="skicka"></label>
+
+            </form>
+        </div>
+
+    </div>
+
+
+    <footer>
+        &copy;Joanna Högberg
+    </footer>
+</body>
+
+</html>

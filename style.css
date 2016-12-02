@@ -1,0 +1,364 @@
+@charset "UTF-8";
+html,
+body,
+div,
+header,
+nav,
+footer,
+section,
+aside,
+ul,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*0,0,0,1*/
+
+html {
+    height: 100%;
+}
+
+
+/*0,0,0,1*/
+
+body {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*font-family för brödtext*/
+    font-family: 'Josefin Slab', serif;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    color: #3b3c36;
+    background: #c7d3bd;
+    margin: 0 auto;
+}
+
+
+/*0,0,0,1*/
+
+h1,
+h3,
+h4,
+th,
+caption,
+td::first-letter {
+    color: #664242;
+    font-weight: 700;
+    padding: 0;
+}
+
+
+/*0,0,0,1*/
+
+nav,
+h1,
+h3,
+h4,
+th,
+caption,
+
+/*0,0,0,2*/
+
+td::first-letter {
+    /*font-family för rubriker, navigation och caption*/
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*0,0,0,1*/
+
+h3,
+h4 {
+    margin: 0;
+}
+
+
+/*Inställningar wrapper och footer för samtliga sidor*/
+
+
+/*0,0,1,0*/
+
+.wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 1000px;
+    align-items: center;
+    margin: 0 auto;
+    align-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+
+/*Specifika inställningar för navigering på samtliga sidor*/
+
+
+/*0,0,1,0*/
+
+.nav {
+    display: flex;
+    width: 100%;
+}
+
+
+/*0,0,1,1*/
+
+.nav ul {
+    display: flex;
+    background-color: #505e47;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav li {
+    display: flex;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+
+/*0,0,1,2*/
+
+.nav li a,
+
+/*0,0,0,1*/
+
+th,
+caption {
+    font-size: 1.2em;
+}
+
+
+/*0,0,1,2*/
+
+.nav li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*0,0,1,2*/
+
+.nav li a:link,
+.nav li a:visited {
+    color: white;
+}
+
+.nav li a:active,
+.nav li a:hover {
+    color: #e86468;
+}
+
+
+/*0,0,1,0*/
+
+.thissection {
+    border-bottom: 2px solid #e86468;
+}
+
+
+/* Specifika inställningar table på sidan Pricing*/
+
+
+/*0,0,0,1*/
+
+table {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+
+th,
+caption {
+    padding: 0.5em;
+}
+
+td {
+    text-align: left;
+    border-bottom: 1px solid #664242;
+}
+
+
+/*0,0,1,0*/
+
+.noBorder {
+    border-bottom: none;
+}
+
+
+/*Inställningar div-box på kontaktsidan, prissidan samt theme sidan*/
+
+
+/*0,0,1,0*/
+
+.boxBorder {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 0.5em;
+    align-items: center;
+}
+
+
+/*Inställningar div-box på index- och about sidan*/
+
+.boxNoBorder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+/*0,0,0,1*/
+
+aside {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    text-align: left;
+    padding-right: 1em;
+    padding-top: 0.5em;
+}
+
+blockquote {
+    margin-top: 0;
+    padding-left: 1em;
+    background-image: url(pics/logo_mini.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-left: 0.2em solid #664242;
+}
+
+
+/*Inställningar för bilder*/
+
+figure {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Specifika inställningar för kontaktformulär och länkar till social media*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+}
+
+
+/*0,0,0,1*/
+
+caption,
+
+/*0,0,1,1*/
+
+input[type="submit"] {
+    background-color: #505e47;
+    color: white;
+}
+
+
+/*0,0,1,0*/
+
+.boxBorder,
+
+/*0,0,0,1*/
+
+input,
+textarea {
+    border: 1px solid #664242;
+}
+
+
+/*0,0,1,0*/
+
+.socMed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social {
+    width: 3em;
+    margin: 0.2em;
+}
+
+
+/*Inställningar media queries*/
+
+@media screen and (max-width: 600px) {
+    .boxBorder {
+        width: 90%;
+        padding: 1em;
+    }
+    figure {
+        display: none;
+    }
+    aside {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-top: 0;
+    }
+    nav,
+    h1,
+    h3,
+    h4,
+    th,
+    caption,
+    .nav li a,
+    td::first-letter {
+        font-size: 1em;
+    }
+    h1 {
+        margin-top: 1em;
+    }
+    .nav ul {
+        flex-direction: column;
+    }
+    .nav li {
+        justify-content: center;
+    }
+    th {
+        text-align: left;
+        padding-left: 0;
+    }
+    table {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    blockquote {
+        border-left: none;
+    }
+    form {
+        align-items: center;
+    }
+}
