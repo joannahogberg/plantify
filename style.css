@@ -318,7 +318,10 @@ textarea {
         width: 90%;
         padding: 1em;
     }
-    figure {
+     .themes {
+        flex-direction: column;
+    }
+    .boxNoBorder figure {
         display: none;
     }
     aside {
