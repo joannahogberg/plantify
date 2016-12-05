@@ -313,7 +313,7 @@ textarea {
 
 /*Inställningar media queries*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 43em) {
     .boxBorder {
         width: 90%;
         padding: 1em;
@@ -354,7 +354,7 @@ textarea {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 29em) {
     blockquote {
         border-left: none;
     }
